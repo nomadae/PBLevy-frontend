@@ -1,0 +1,35 @@
+#main-content {
+
+}
+
+.imagen-landing {
+  background-image: url("/assets/img/landingScreen.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+img.imagen-logo {
+  max-width: 50%;
+  height: auto;
+}
+
+#main-offer {
+  background-color: black;
+  color: #fff;
+  opacity: .5;
+  font-size: x-large;
+}
+
+#main-offer-btn {
+  color: mintcream;
+  opacity: 1;
+  font-size: x-large;
+}
+
+#main-offer-btn:hover {
+  color: #333333;
+}
+
+#faq {
+  color: mintcream;
+}
