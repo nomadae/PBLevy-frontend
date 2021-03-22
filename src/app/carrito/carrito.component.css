@@ -1,3 +1,17 @@
 #carrito {
-  color: #333333;
+  color: whitesmoke;
+}
+
+.custom-select {
+  color: mintcream;
+}
+.form-control {
+  color: mintcream;
+}
+
+.text-muted {
+  color: darkgray!important;
+}
+::placeholder {
+  color: gray;
 }

@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top ">
   <div class="container-fluid">
 
     <div class="col-6">
-      <div *ngIf="isInCart">
-        <a href="/home" > Return to home </a>
-      </div>
+<!--      <div *ngIf="isInCart">-->
+<!--        <a href="/home" > Return to home </a>-->
+<!--      </div>-->
     </div>
     <div class="col-6">
       <div class="row">
@@ -15,18 +15,18 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto mr-5">
         <li class="nav-item px-2">
-          <a href="#home" class="nav-link">Home</a>
+          <a href="#home" class="nav-link">INICIO</a>
         </li>
         <li class="nav-item px-2">
-          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#faq" class="nav-link">PRODUCTO</a>
         </li>
         <li class="nav-item px-2">
 
-          <a (click)="toggleisInCart()" routerLink="carrito" class="nav-link">Shop</a>
+          <a (click)="toggleisInCart()" routerLink="carrito" class="nav-link">COMPRA</a>
 
         </li>
         <li class="nav-item px-2">
-          <a href="#about" class="nav-link">About</a>
+          <a href="#about" class="nav-link">NOSOTROS</a>
         </li>
       </ul>
     </div>

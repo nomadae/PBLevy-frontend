@@ -30,6 +30,39 @@ img.imagen-logo {
   color: #333333;
 }
 
-#faq {
+#features {
   color: mintcream;
+}
+
+.features {
+  font-size: x-large;
+}
+.list-group {
+  display: inline-block;
+  color: whitesmoke;
+  font-size: x-large;
+  font-family: 'Lato', sans-serif;
+
+}
+#faq {
+  color: whitesmoke;
+}
+
+.zoom {
+
+  transition: transform .2s; /* Animation */
+
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+p.preg {
+  font-size: x-large;
+  color: yellow;
+}
+
+p.resp {
+
 }

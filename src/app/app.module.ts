@@ -11,6 +11,7 @@ import {RoutingModule} from './routing/routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
+import {NgxPayPalModule} from 'ngx-paypal';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {FormsModule} from '@angular/forms';
     RoutingModule,
     NgbModule,
     FormsModule,
+    NgxPayPalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

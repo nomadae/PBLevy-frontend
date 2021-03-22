@@ -10,7 +10,7 @@
         <span> 1899$ MXN</span>
       </p>
       <div class="text-center">
-      <button type="button" class="btn btn-lg btn-outline-warning" id="main-offer-btn"> Comprar </button>
+      <button type="button" (click)="createOrder()" class="btn btn-lg btn-outline-warning" id="main-offer-btn"> Comprar </button>
       </div>
     </div>
   </div>
@@ -18,14 +18,106 @@
     <app-carousel></app-carousel>
   </div>
   </div>
-  <div class="row mt-5" id="faq">
+  <div class="row mt-5" id="features">
     <div class="col-12">
-      <div class="text-center">
-      <h1 class="display-4">En PBLevy te ofrecemos algo unico</h1>
-      <p class=""> Un innovador sistema de filtrado, con bomba de aire y varias capas de protección <br>
+      <div class="text-center features">
+        <h1 class="display-4">En PBLevy te ofrecemos algo unico</h1>
+        <p class=""> Un innovador <mark>sistema de filtrado</mark> con capas de protección <br>
           para que sigas respirando bien, sin comprometer tu salud.
-      </p>
+        </p>
+        <img src="/assets/img/filtro-feature-1.gif" alt="" class="img-fluid">
+        <p class=""> Incluye una <mark>bomba de aire</mark> de dos modos: <br> </p>
+        <ul class="list-unstyled">
+          <li>Modo normal</li>
+          <li>Modo de trabajo</li>
+        </ul>
+        <img src="assets/img/bomba-feature.gif" alt="" class="img-fluid">
       </div>
     </div>
   </div>
+  <div class="row" id="package-content">
+    <div class="col-6">
+      <div class="mt-5 text-center">
+      <img src="assets/img/package-contents.gif" alt="" class="img-fluid zoom">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row">
+      <ul class="list-group mt-5">
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark ">
+          <span class="badge badge-primary badge-pill mr-2">1</span>
+          Adaptador para mascarilla
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">2</span>
+          Adaptador para manguera
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">3</span>
+          Manguera
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">4</span>
+          Empaque
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">5</span>
+          Correa ajustable
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">6</span>
+          Mascarilla
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">7</span>
+          Manual de uso
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">8</span>
+          Filtro HEPA
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">9</span>
+          Bomba / Caja de filtro
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+          <span class="badge badge-primary badge-pill">10</span>
+          Caja contenedora
+        </li>
+      </ul>
+      </div>
+      <div class="row mt-3">
+        <div class="ml-2">
+      <button type="button" (click)="createOrder()" class="btn btn-outline-warning btn-lg">Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="faq">
+    <div class="col-12">
+      <div class="text-center mt-5">
+        <p class="display-1">¿Tienes preguntas?</p>
+
+        <p class="lead preg"> ¿Mi compra es segura? </p> <br>
+        <p class="lead resp"> Si. Actualmente recibimos pagos a travez de Paypal o también puedes hacer una
+          <a href="">solicitud al equipo de ventas</a> <br> para que se ponga en contacto contigo por correo electronico
+        y puedan enviarte el paquete.</p>
+        <p class="lead preg">¿Cuál es el costo del paquete?</p>
+        <p class=" lead resp"> El precio de cada paquete es de 1899$ MXN.</p>
+        <p class="lead preg">¿Cómo se envía mi paquete?</p>
+        <p class=" lead resp"> Se envía con DHL a toda la república y tiene un costo de 200$ MXN.</p>
+        <p class="lead preg">¿Qué pasa si requiero otro filtro?</p>
+        <p class=" lead resp"> ¡Nosotros te lo enviamos! Ofrecemos repuestos de filtros tipo HEPA.</p>
+        <p class="lead preg">¿Qué es un filtro tipo HEPA?</p>
+        <p class=" lead resp"> HEPA significa arresto de particulas de alta eficiencia
+          por sus siglas en inglés.
+        </p>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
 </div>
