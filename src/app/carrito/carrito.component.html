@@ -1,220 +1,81 @@
-<div class="container mt-3" id="carrito">
-  <div class="py-5 text-center">
-<!--    <img class="d-block mx-auto mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-    <h2>Checkout</h2>
-    <p class="lead"> Aqui puede llenar su dirección de envío y elegir su forma de pago. <br>
-    </p>
-  </div>
+<div id="wrapper">
+  <div id="container">
 
-  <div class="row">
-    <div class="col-md-4 order-md-2 mb-4">
-      <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Su carrito</span>
-        <span class="badge badge-secondary badge-pill">{{n}}</span>
-      </h4>
-      <ul class="list-group mb-3" *ngIf="n>-1">
-        <li class="list-group-item d-flex justify-content-between lh-condensed bg-dark">
-          <div>
-            <h6 class="my-0">Paquete completo</h6>
-            <small class="text-muted">Descripcion de producto 1</small>
-          </div>
-          <span class="text-muted">$1899</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed bg-dark">
-          <div>
-            <h6 class="my-0">Filtro HEPA</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$200</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed bg-dark">
-          <div>
-            <h6 class="my-0">Envío</h6>
-            <small class="text-muted">Envío Nacional DHL</small>
-          </div>
-          <span class="text-muted">$200</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-light bg-dark">
-          <div class="text-success">
-            <h6 class="my-0">Promoción</h6>
-            <small>Descuento</small>
-          </div>
-          <span class="text-success">-$50</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-dark">
-          <span>Total (MXN)</span>
-          <strong>$2000</strong>
-        </li>
-      </ul>
+    <div id="info">
 
-<!--      <form class="card p-2 bg-dark">-->
-<!--        <div class="input-group ">-->
-<!--          <input type="text" class="form-control bg-dark" placeholder="Promo code">-->
-<!--          <div class="input-group-append">-->
-<!--            <button type="submit" class="btn btn-secondary">Redeem</button>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </form>-->
+      <img id="product" src="assets/img/1.png"/>
+
+      <p>Activity Bracelet Surge</p>
+      <p>Black</p>
+
+      <div id="price">
+
+        <h2>$ 2 700</h2>
+
+      </div>
     </div>
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Datos de comprador y dirección de envío.</h4>
-      <form class="needs-validation mb-4" novalidate>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Nombre</label>
-            <input type="text" class="form-control bg-dark" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Apellido</label>
-            <input type="text" class="form-control bg-dark" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-          </div>
+
+    <div id="payment">
+
+      <form id="checkout">
+
+        <label>Nombre Completo</label>
+        <input class="cardtexts" id="nombre" type="text" name="name" requierd="true" maxlength="50" placeholder="Juan Martinez">
+        <label>Calle y numero</label>
+        <input id="calle" class="cardtexts" type="text" name="name" requierd="true" maxlength="50" placeholder="Calle 123">
+        <label>Colonia</label>
+        <input id="colonia" type="text" class="cardtexts" name="name" requierd="true" maxlength="50" placeholder="Villa Fontana">
+        <label>C.P.</label>
+        <input id="codigopostal" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="45200">
+        <label>Ciudad</label>
+        <input id="ciudad" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="Zapopan">
+
+        <label>Credit Card Number</label>
+        <input id="cardnumber" type=text pattern="[0-9]{13,16}" name="cardnumber" requierd="true" placeholder="0123-4567-8901-2345">
+
+        <label>Card Holder</label>
+        <input id="cardholder" type="text" name="name" requierd="true" maxlength="50" placeholder="Cardholder">
+
+        <label>Expiration Date</label>
+
+        <div id="left">
+          <select name="month" id="month" onchange="" size="1">
+            <option value="00">MM</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <p>/</p>
+          <select name="year" id="year" onchange="" size="1">
+            <option value="00">YY</option>
+            <option value="01">16</option>
+            <option value="02">17</option>
+            <option value="03">18</option>
+            <option value="04">19</option>
+            <option value="05">20</option>
+            <option value="06">21</option>
+            <option value="07">22</option>
+            <option value="08">23</option>
+            <option value="09">24</option>
+            <option value="10">25</option>
+          </select>
         </div>
 
-<!--        <div class="mb-3">-->
-<!--          <label for="username">Username</label>-->
-<!--          <div class="input-group">-->
-<!--            <div class="input-group-prepend">-->
-<!--              <span class="input-group-text">@</span>-->
-<!--            </div>-->
-<!--            <input type="text" class="form-control bg-dark" id="username" placeholder="Username" required>-->
-<!--            <div class="invalid-feedback" style="width: 100%;">-->
-<!--              Your username is required.-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+        <label id="cvc-label">CVV</label>
+        <input id="cvc" type="text" placeholder="123" maxlength="3" />
 
-        <div class="mb-3">
-          <label for="email">Email</label>
-          <input type="email" class="form-control bg-dark" id="email" placeholder="yo@micorreo.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address">Calle y numero <span class="text-muted">(opcional incluir interior)</span></label>
-          <input type="text" class="form-control bg-dark" id="address" placeholder="Calle bonita 223..." required>
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address2">Colonia</label>
-          <input type="text" class="form-control bg-dark" id="address2" placeholder="Escriba su colonia">
-        </div>
-
-        <div class="row">
-<!--          <div class="col-md-5 mb-3">-->
-<!--            <label for="country">Country</label>-->
-<!--            <select class="custom-select d-block w-100 bg-dark" id="country" required>-->
-<!--              <option value="">Choose...</option>-->
-<!--              <option>United States</option>-->
-<!--            </select>-->
-<!--            <div class="invalid-feedback">-->
-<!--              Please select a valid country.-->
-<!--            </div>-->
-<!--          </div>-->
-          <div class="col-md-4 mb-3">
-            <label for="state">Estado</label>
-            <select class="custom-select d-block w-100 bg-dark" id="state" required>
-              <option value="">Elija su estado...</option>
-              <option>Aguascalientes</option>
-              <option>Baja California</option>
-              <option>Baja California Sur</option>
-              <option>Cohahuila</option>
-              <option>Colima</option>
-              <option>Durango</option>
-              <option>Estado de México</option>
-            </select>
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Codigo postal</label>
-            <input type="text" class="form-control bg-dark" id="zip" placeholder="" required>
-            <div class="invalid-feedback">
-              Zip code required.
-            </div>
-          </div>
-        </div>
-<!--        <div class="custom-control custom-checkbox">-->
-<!--          <input type="checkbox" class="custom-control-input bg-dark" id="same-address">-->
-<!--          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>-->
-<!--        </div>-->
-<!--        <div class="custom-control custom-checkbox">-->
-<!--          <input type="checkbox" class="custom-control-input bg-dark" id="save-info">-->
-<!--          <label class="custom-control-label" for="save-info">Save this information for next time</label>-->
-<!--        </div>-->
-        <hr class="mb-4">
-
-        <h4 class="mb-3">Forma de pago</h4>
-
-<!--        <div class="d-block my-3">-->
-<!--          <div class="custom-control custom-radio">-->
-<!--            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>-->
-<!--            <label class="custom-control-label" for="credit">Tarjeta de crédito</label>-->
-<!--          </div>-->
-<!--          <div class="custom-control custom-radio">-->
-<!--            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>-->
-<!--            <label class="custom-control-label" for="debit">Tarjeta de debito</label>-->
-<!--          </div>-->
-<!--          <div class="custom-control custom-radio">-->
-<!--            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>-->
-<!--            <label class="custom-control-label" for="paypal">PayPal</label>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--          <div class="col-md-6 mb-3">-->
-<!--            <label for="cc-name">Nombre</label>-->
-<!--            <input type="text" class="form-control bg-dark text-white" id="cc-name" placeholder="" required>-->
-<!--            <small class="text-muted">Nombre que aparece en la tarjeta</small>-->
-<!--            <div class="invalid-feedback">-->
-<!--              Name on card is required-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-md-6 mb-3">-->
-<!--            <label for="cc-number">Número de tarjeta</label>-->
-<!--            <input type="text" class="form-control bg-dark text-white" id="cc-number" placeholder="" required>-->
-<!--            <div class="invalid-feedback">-->
-<!--              Se requiere el número de tarjeta-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--          <div class="col-md-3 mb-3">-->
-<!--            <label for="cc-expiration">Vencimiento</label>-->
-<!--            <input type="text" class="form-control bg-dark" id="cc-expiration" placeholder="" required>-->
-<!--            <div class="invalid-feedback">-->
-<!--              Expiration date required-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-md-3 mb-3">-->
-<!--            <label for="cc-cvv">CVV</label>-->
-<!--            <input type="text" class="form-control bg-dark" id="cc-cvv" placeholder="" required>-->
-<!--            <div class="invalid-feedback">-->
-<!--              Security code required-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Contactar al servicio de ventas</button>
+        <input class="btn" type="button" name="purchase" value="Comprar">
       </form>
-      <ngx-paypal [config]="payPalConfig"></ngx-paypal>
-
-<!--      <div id="smart-button-container" class="mt-3">-->
-<!--        <div style="text-align: center;">-->
-<!--          <div id="paypal-button-container"></div>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
+
   </div>
 </div>
-

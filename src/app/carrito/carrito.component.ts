@@ -6,7 +6,7 @@ import {IPayPalConfig, ICreateOrderRequest} from 'ngx-paypal';
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.component.html',
-  styleUrls: ['./carrito.component.css']
+  styleUrls: ['./scsestile.scss']
 })
 export class CarritoComponent implements OnInit {
   public payPalConfig ?: IPayPalConfig;
