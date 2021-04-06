@@ -14,6 +14,9 @@ export class CarritoComponent implements OnInit {
   showSuccess = false;
   showError = false;
   showCancel = false;
+  cantidad = 1899.00;
+  envio = 200.00;
+
   constructor(router: Router,
               dataProvider: ProductsService,
               ) { }
@@ -24,7 +27,7 @@ export class CarritoComponent implements OnInit {
   private initConfig(): void {
     this.payPalConfig = {
       currency: 'MXN',
-      clientId: 'sb',
+      clientId: 'AYoTPhGHMFmdID33CmbkJtMP01plG_oRoD9z4S2BRfhyRUXVeIrfOhkrjnjBOiYidq9qzupReEHqO4yw',
       createOrderOnClient: (data) => <ICreateOrderRequest> {
         intent: 'CAPTURE',
         purchase_units: [{
@@ -44,7 +47,7 @@ export class CarritoComponent implements OnInit {
             category: 'PHYSICAL_GOODS',
             unit_amount: {
               currency_code: 'MXN',
-              value: '1899.00'}
+              value: '1899'}
             },
             {
               name: 'Envio Nacional DHL',

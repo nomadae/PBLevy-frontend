@@ -1,11 +1,13 @@
 <div id="wrapper">
+  <script src="https://www.paypal.com/sdk/js?client-id=AYoTPhGHMFmdID33CmbkJtMP01plG_oRoD9z4S2BRfhyRUXVeIrfOhkrjnjBOiYidq9qzupReEHqO4yw"></script>
+
   <div id="container">
 
     <div id="info">
 
       <img id="product" src="assets/img/1.png"/>
 
-      <p>Activity Bracelet Surge</p>
+      <p>Mascarilla con Ventilador</p>
       <p>Black</p>
 
       <div id="price">
@@ -20,61 +22,25 @@
       <form id="checkout">
 
         <label>Nombre Completo</label>
-        <input class="cardtexts" id="nombre" type="text" name="name" requierd="true" maxlength="50" placeholder="Juan Martinez">
+        <input class="cardtexts" id="nombre" type="text" name="name" requierd="true" maxlength="50" placeholder="">
         <label>Calle y numero</label>
-        <input id="calle" class="cardtexts" type="text" name="name" requierd="true" maxlength="50" placeholder="Calle 123">
+        <input id="calle" class="cardtexts" type="text" name="name" requierd="true" maxlength="50" placeholder="">
         <label>Colonia</label>
-        <input id="colonia" type="text" class="cardtexts" name="name" requierd="true" maxlength="50" placeholder="Villa Fontana">
+        <input id="colonia" type="text" class="cardtexts" name="name" requierd="true" maxlength="50" placeholder="">
         <label>C.P.</label>
-        <input id="codigopostal" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="45200">
+        <input id="codigopostal" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="">
         <label>Ciudad</label>
-        <input id="ciudad" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="Zapopan">
+        <input id="ciudad" type="text"  class="cardtexts"name="name" requierd="true" maxlength="50" placeholder="">
 
-        <label>Credit Card Number</label>
-        <input id="cardnumber" type=text pattern="[0-9]{13,16}" name="cardnumber" requierd="true" placeholder="0123-4567-8901-2345">
 
-        <label>Card Holder</label>
-        <input id="cardholder" type="text" name="name" requierd="true" maxlength="50" placeholder="Cardholder">
 
-        <label>Expiration Date</label>
 
-        <div id="left">
-          <select name="month" id="month" onchange="" size="1">
-            <option value="00">MM</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <p>/</p>
-          <select name="year" id="year" onchange="" size="1">
-            <option value="00">YY</option>
-            <option value="01">16</option>
-            <option value="02">17</option>
-            <option value="03">18</option>
-            <option value="04">19</option>
-            <option value="05">20</option>
-            <option value="06">21</option>
-            <option value="07">22</option>
-            <option value="08">23</option>
-            <option value="09">24</option>
-            <option value="10">25</option>
-          </select>
-        </div>
 
-        <label id="cvc-label">CVV</label>
-        <input id="cvc" type="text" placeholder="123" maxlength="3" />
 
-        <input class="btn" type="button" name="purchase" value="Comprar">
       </form>
+      <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+
+<!--      <script>paypal.Buttons().render('#paypal-button-container');</script>-->
     </div>
 
   </div>

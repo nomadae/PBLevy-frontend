@@ -37,7 +37,7 @@ $font: "proxima-nova", sans-serif;
 
 #container{
   width: 60vw;
-  height: 70vh;
+  min-height: 60vh;
   margin: 0 auto;
   margin-top: 20px;
   box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
